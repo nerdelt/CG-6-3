@@ -9,7 +9,7 @@ namespace AliceWonderland
             string firstLine = "Alice was beginning to get very tired of sitting by" +
                 "her sister on the bank, and of having nothing to do: once or twice " +
                 "she had peeped into the book her sister was reading, but it had no pictures" +
-                "or converations in it, 'and waht is the use of a book,' thought Alice " +
+                "or converations in it, 'and what is the use of a book,' thought Alice " +
                 "'without pictures or conversation?'";
 
             firstLine = firstLine.ToLower();
@@ -32,6 +32,7 @@ namespace AliceWonderland
                     Console.WriteLine("The game has ended.");
                     break;
                 }
+
                 else
                 {
                     int answer = firstLine.IndexOf(toFind.ToLower());
@@ -43,18 +44,9 @@ namespace AliceWonderland
 
                Console.ReadLine();
             
+        }
            
-            
-            
-
-  
-
-            
-        }
-           // private static bool Contains()
-        //{
-
-        }
-        }
+     }
+ }
     
 
