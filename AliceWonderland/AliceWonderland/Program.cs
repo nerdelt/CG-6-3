@@ -13,9 +13,6 @@ namespace AliceWonderland
                 "or converations in it, 'and what is the use of a book,' thought Alice " +
                 "'without pictures or conversation?'";
 
-            //Changes the string to all lower to help with case insensitive search
-            firstLine = firstLine.ToLower();
-
             //Describes games to user and askes for input
             Console.WriteLine("Do you remember the first sentence of Alice in Wonderland?");
             Console.WriteLine("Think of a word or phrase that might be in this sentence.\n" +
@@ -45,7 +42,7 @@ namespace AliceWonderland
                 else
                 {
                     //finds term in string
-                    int answer = firstLine.IndexOf(toFind.ToLower());
+                    int answer = firstLine.ToLower().IndexOf(toFind.ToLower());
 
                     //if term is not in string (-1) prints false, if it is prints true
                     string message = (answer != -1) ? "true" : "false";
